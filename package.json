@@ -1,0 +1,21 @@
+{
+  "name": "node-jasperst",
+  "version": "1.0.0",
+  "description": "JasperReports for nodejs with JasperStarter",
+  "main": "dist/index.js",
+  "scripts": {},
+  "keywords": [
+    "JasperReports",
+    "node",
+    "jasper",
+    "reports",
+    "JasperStarter"
+  ],
+  "author": "Jose Perez",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
