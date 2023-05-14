@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "JasperReports for nodejs with JasperStarter",
   "main": "dist/index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/demo.ts",
+    "compile": "tsc",
+    "demo": "node dist/demo.js"
+  },
   "keywords": [
     "JasperReports",
     "node",
@@ -14,6 +18,7 @@
   "author": "Jose Perez",
   "license": "MIT",
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
