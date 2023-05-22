@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/demo.ts",
+    "start": "ts-node src/demo.ts",
     "compile": "tsc",
     "demo": "node dist/demo.js"
   },
