@@ -14,19 +14,27 @@ enum data {
 
 const output = 'output';
 
-async function checkJasper(njst: NodeJasperSt) {
-  let result = ''
-  //await njst.compile(reports.Contactos, output);
-  njst.process(reports.Contactos, output, {
-    db_connection: {
-      'driver': 'json',
-      'data_file': path.join(output, data.Contactos), 
-    }
-  });
-  
-  result = await njst.execute()
+async function compileJasper(njst: NodeJasperSt) {
+  await njst.compile(reports.Contactos, output);
+  let result = await njst.execute()
   console.log(result)
 }
 
-const njst = new NodeJasperSt()
-checkJasper(njst);
+async function processJasper(njst: NodeJasperSt) {
+  njst.process(reports.Contactos, output, {
+    db_connection: {
+      'driver': 'json',
+      'data_file': path.join('examples', data.Contactos), 
+    }
+  });
+  
+  let result = await njst.execute()
+  console.log(result)
+}
+
+async function init() {
+  const njst = new NodeJasperSt()
+  await compileJasper(njst);
+  await processJasper(njst);
+}
+init();
