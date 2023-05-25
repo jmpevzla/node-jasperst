@@ -1,6 +1,6 @@
 {
   "name": "node-jasperst",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JasperReports for nodejs with JasperStarter",
   "main": "dist/index.js",
   "scripts": {
