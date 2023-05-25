@@ -1,6 +1,6 @@
 {
   "name": "node-jasperst",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JasperReports for nodejs with JasperStarter",
   "main": "dist/index.js",
   "scripts": {
@@ -8,6 +8,10 @@
     "start": "ts-node src/demo.ts",
     "compile": "tsc",
     "demo": "node dist/demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmpevzla/node-jasperst"
   },
   "keywords": [
     "JasperReports",
